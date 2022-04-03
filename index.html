@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html>
+<title> praful_gajbhiye</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./font/css/all.css" type="text/css" media="all"/>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+html{ 
+  background-color:black;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 1;
+}
+body,h1,h2,h3,h4,h5,h6 
+{
+  font-family: "Montserrat", sans-serif;
+
+}
+h2{
+  background-color: darkgray;
+  width: 101%;
+}
+.head{
+  background-color: #222;
+}
+div.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  padding-top: 3px !important;
+  padding-bottom: 0 !important;
+  min-height: 10px !important;
+  
+  border-radius: 9px;
+  /* margin-left:auto!important;*/
+}
+span.sticky{
+  margin-left: 92%;
+  margin-bottom: 90px;
+}
+p {
+  font-size: 20px;
+  color :aliceblue;
+}
+nav{
+  width: 100%;
+
+}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 25px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.overlay {
+   height: 0%;
+   width: 100%;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+   overflow-y: hidden;
+   transition: 0.5s;
+
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+  }
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px){
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    
+  }
+}
+
+div.social{
+  padding: 5px;
+  margin: 10px;
+  height: 15px;
+  text-align: center;
+  background-color:#818181;
+}
+div.flex-center{
+  color:red rgba(244,67,54,1);
+  color:blue rgba(33,150,243,1); 
+}
+div.flex-center {
+  width: 100%;
+  min-height: 50vh;
+  background: #000;  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.icon-3d{
+  padding: 10px;
+  -webkit-animation: icon3d 200ms 10;
+  animation: icon3d 200ms 10;
+  color: #fff;
+  
+}
+
+.icon-3d:hover{
+    -webkit-animation: icon3d 200ms infinite;
+            animation: icon3d 200ms infinite;
+  }
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px red, -5px -6px blue;
+  }
+  25% {
+    text-shadow: -5px -6px red, 5px 4px blue;
+  }
+  50% {
+    text-shadow: 5px -4px red, -8px 4px blue;
+  }
+  75% {
+    text-shadow: -8px -4px red, -5px -4px blue;
+  }
+  100% {
+    text-shadow: -5px 0 red, 5px -4px blue;
+  }
+}
+
+/*Image like*/
+/*
+.fa-heart {
+  color: red;
+  cursor: pointer;
+}
+
+#heart {
+  color: red;
+  cursor: pointer;
+}
+*/
+/*Form Styling*/
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #888;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:#888;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+
+/*  image like instagram  */
+.column{
+  float: left;
+  margin-left: 15px;
+  width: 90%;
+  padding: 8px;
+  box-sizing: 90%;
+ display: flex;
+ flex: center;
+ margin-right: -5px;
+border-radius: 5px;
+}
+.content{
+  position:static;
+  margin-left: 15px;
+  background-color: white;
+  padding: 8px;
+  width: 90%;
+  margin-left:5%;
+  box-sizing: 90%;
+  }
+@media screen and (max-width: 100%) {
+  .column{
+    width:50%;
+  }
+  
+}
+
+@media screen and (max-width: 100%) {
+  .column{
+    width:50%;
+  }
+  
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+   padding-top: 60px;
+   
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Add Zoom Animation */ 
+.animate {
+ -webkit-animation: animatezoom 0.6s;
+ animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+ from {-webkit-transform: scale(0)}
+ to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* Change styles for span and cancel
+button on extra small screens */ 
+@media screen and(max-width: 300px){
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* 
+.heart{
+  fill: red;
+  stroke: red;
+  stroke-width: 30;
+  transition: all 0.5s;
+  color: red;
+} */
+
+    
+.active-heart{
+  animation:like 0.5s 1;
+  fill: red;
+  color:red;
+  stroke: red;
+}     
+  @-webkit-keyframes like{
+    0%{ transform: scale(1);}
+    90%{ transform: scale(1.2);}
+    100%{ transform: scale(1.1);}
+  }
+
+
+/* three dots dropdown*/
+ 
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 0px;
+  height: 0; 
+  background-color: white; 
+  margin-top: -1.3%;
+}
+
+span.dropdown {
+  position: right; 
+  text-align: right; 
+  margin-top: -29px; 
+  margin-right: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.mySlides{
+  display:none;
+}
+</style>
+
+<div class="sticky">
+<header class="head" style="border: solid #000; border-radius: 10px;margin-top: -1.5px;">
+ <div style="margin-left: 5px; background-color:rgba(0,0,0,0.4); border-radius: 24px; width: 140px; height: 50px; margin-top: 3px; margin-bottom: 3px;">
+  
+  <span  style="font-size: 226%;width: 100%; margin-left:15px; color:white;cursor:pointer"onclick="openNav()">☰</span>
+  <span style="margin-left: 5px;">
+  <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+    <i style="font-size: 204%;color:white;"class="fa-solid fa-p"></i>
+    <i style="font-size: 204%;color:white;"class="fa-solid fa-g"></i>
+  </i>
+  </span>
+</div>
+ <!-- <img class="sticky" src="./image/p14.JPG" style="width:7%;border-radius:75px;height:7%; margin-left: 83%; margin-top: 6px;">-->
+</header>
+</div>
+<body class="w3-black">
+  
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-align: right;">×</a>
+ <div class="overlay-content">
+   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div style="margin-left: auto;">
+    
+    <a href="#" class="w3-bar-item w3-button" style="font-size: 30px; width:25% !important"><span><i class="fa-solid fa-house-user">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME</i></span> </a>
+    <a href="#about" class="w3-bar-item w3-button" style="font-size: 30px; width:25% !important"><span><i class="fa-solid fa-address-card">&nbsp;&nbsp;&nbsp;&nbsp;ABOUT</i></span></a>
+    <a href="#photos" class="w3-bar-item w3-button" style="font-size: 30px; width:25% !important"><span><i class="fa-solid fa-camera">&nbsp;&nbsp;&nbsp;PHOTOS</i></span></a>
+    <a href="#contact" class="w3-bar-item w3-button" style="font-size: 30px; width:25% !important"><span><i class="fa-solid fa-address-book">&nbsp;&nbsp;CONTACT</i></span></a>
+    </div>
+   </div>
+ </div>
+</div>
+ 
+<!--<span class="sticky" style="font-size: 40px; color:white; text-align: center; cursor: pointer" onclick="openNav()">☰</span> -->
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <br><br>
+    <p style="text-align: center; color: whitesmoke; font-size: 70px; margin-top: -20px;  font-family: 'Brush Script MT',cursive;">Praful Gajbhiye.</p>
+    <p style="padding: 5px; color:aliceblue; text-align: center;">Model and Influncer.</p>
+    
+    <div class="mySlides">
+      <img style="margin-top:-9px;" src="./image/p11new.jpg" width="100%" height="100%">
+     </div>
+
+     <div class="mySlides">
+      <img src="./image/first.png" style="width:100%">
+     </div>
+
+     <div class="mySlides">
+      <img src="./image/second.png" style="width:100%">
+     </div>
+  </header>
+<br>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about"><br>
+    <h2 style="width: 99%; background-color:darkgray; color:#000; border-radius: 5px; height:35px; font-size: 28px;"> 
+      <i class="fa-brands fa-phoenix-framework"></i>  Praful Gajbhiye</h2>
+    <br>
+  
+    <p style="margin-left: 7px; font-family: 'Courier New', Courier, monospace;">
+      Some text about me. I am praful_gajbhiye✨, Practical and versatile "Computer Science Engineer" with significant experience collaborating on the troubleshooting process.<br>
+      Work as a creator model with two year experience and paid collaboration experience with veetmen india as a brand partner on instagram.  
+    </p> 
+<br><br>
+    <h2 style="border-radius: 5px; height:35px; font-size: 28px; width: 99%;" > 
+      <i class="fa-solid fa-star-of-life" style="margin-left: 10px; "></i> My Skills</h2>
+    <!--<hr style="width:100%" class="opacity">-->
+    <br><br>
+  <div style="margin-left: 5%;">  
+    <p >Photography </p><br>
+    <div style=" background-color: whitesmoke;width: 80%; border-radius: 8px;">
+      <div  style="height:28px;width:85%; background-color:#818181; border-radius: 8px; text-align: center;">85%</div>
+    </div><br><br>
+    <p >Web Design</p><br>
+    <div style=" background-color: whitesmoke;width: 80%; border-radius: 8px;">
+      <div  style="height:28px;width:55%; background-color:#818181; border-radius: 8px; text-align: center;">55%</div>
+    </div><br><br>
+    <p >Photo Editing</p><br>
+    <div style=" background-color: whitesmoke;width: 80%; border-radius: 8px;">
+      <div  style="height:28px;width:95%; background-color:#818181; border-radius: 8px; text-align: center;">95%</div>
+    </div><br><br>
+    <p >Modeling</p><br>
+    <div style=" background-color: whitesmoke;width: 80%; border-radius: 8px;">
+      <div  style="height:28px;width:90%; background-color:#818181; border-radius: 8px; text-align: center;">90%</div>
+    </div><br><br>
+    <p >Art & Drawing</p><br>
+    <div style=" background-color: whitesmoke;width: 80%; border-radius: 8px;">
+      <div  style="height:28px;width:96%; background-color:#818181; border-radius: 8px; text-align: center;">96%</div>
+    </div><br><br>
+    <p >Computer Language</p><br>
+    <div style=" background-color: whitesmoke;width: 80%; border-radius: 8px;">
+      <div  style="height:28px;width:40%; background-color:#818181; border-radius: 8px; text-align: center;">40%</div>
+    </div>
+  </div>  
+    <br><br>
+    <div style=" color:white; width: 95%; margin-left: 2%; text-shadow: 2px 1px #818181;"> 
+
+      <p ><i class="fa-solid fa-earth-asia"></i> Languages know me</p> <br>
+      <div style=" background-color: whitesmoke;width: 100%; border-radius: 7px;">
+        <div  style="height:28px;width:90%; background-color:#818181; border-radius: 7px; text-align: center;">Marathi +</div>
+      </div><br><br>
+      <div style=" background-color: whitesmoke;width: 100%; border-radius: 7px;">
+        <div  style="height:28px;width:80%; background-color:#818181; border-radius: 7px; text-align: center;">Hindi +</div>
+      </div><br><br>
+      <div style=" background-color: whitesmoke;width: 100%; border-radius: 7px;">
+        <div  style="height:28px;width:60%; background-color:#818181; border-radius: 7px; text-align: center;">English +</div>
+      </div><br> 
+    </div><br>
+    
+    <div style="padding: 10px;color: whitesmoke; text-align: center; border: solid; margin-right: 2px; font-size: 20px; width: 94%; background-color: #222;">
+      <div>
+        <span >11+</span><br>
+        Partners<i class="fa-solid fa-user-cowboy"></i>
+      </div><br>
+      <div >
+        <span >2+</span><br>
+        Projects Done
+      </div><br>
+      <div class="w3-quarter w3-section">
+        <span >1.4k+</span><br>
+        Happy Clients
+      </div><br>
+      <div >
+        <span >15+</span><br>
+        Meetings
+      </div>
+    </div><br>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+   <h2 class="w3-text-light-grey" style="border-radius: 5px; height:35px; font-size: 28px; width: 99%;">
+    <i class="fa-solid fa-image" style="margin-left: 10px; "></i> My Photos</h2> 
+    <!--<hr style="width:100%" class="opacity">-->
+<br>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        
+  
+        <div class="column">
+          <div class="content">
+
+
+         <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+         <div style=" margin-left: 60px; margin-top: -50px;"> 
+          <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+        <img src="./image/P.jpg" style="width:100%;">
+          <i class="fa-regular fa-heart" id="ht" style=" font-size: 30px; margin-left: 4%;" onclick="likeClick('ht')"></i>
+          
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="1" style="color:#000; font-size: 30px; " onclick="likeClick('1')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="2" style="color:#000; font-size: 30px; " onclick="likeClick('2')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="3" style="color:#000; font-size: 30px; " onclick="likeClick('3')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="4" style="color:#000; font-size: 30px; " onclick="likeClick('4')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="5" style="color:#000; font-size: 30px; " onclick="likeClick('5')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+
+           </div>
+          </div>
+        <br><br><br>
+        
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar1P" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar1P')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+        <img src="./image/P1.jpg" style="width:100%">
+          <i class="fa-regular fa-heart" id="h" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('h')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="P6" style="color:#000; font-size: 30px; " onclick="likeClick('P6')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="P7" style="color:#000; font-size: 30px; " onclick="likeClick('P7')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="P8" style="color:#000; font-size: 30px; " onclick="likeClick('P8')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="P9" style="color:#000; font-size: 30px; " onclick="likeClick('P9')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="P10" style="color:#000; font-size: 30px; " onclick="likeClick('P10')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar1" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar1')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+        <img src="./image/P8.jpg" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht1" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('ht1')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="6" style="color:#000; font-size: 30px; " onclick="likeClick('6')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="7" style="color:#000; font-size: 30px; " onclick="likeClick('7')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="8" style="color:#000; font-size: 30px; " onclick="likeClick('8')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="9" style="color:#000; font-size: 30px; " onclick="likeClick('9')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="10" style="color:#000; font-size: 30px; " onclick="likeClick('10')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+        
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar2" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar2')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+
+          <img src="./image/p13.jpg" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht2" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('ht2')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="11" style="color:#000; font-size: 30px; " onclick="likeClick('11')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="12" style="color:#000; font-size: 30px; " onclick="likeClick('12')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="13" style="color:#000; font-size: 30px; " onclick="likeClick('13')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="14" style="color:#000; font-size: 30px; " onclick="likeClick('14')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="15" style="color:#000; font-size: 30px; " onclick="likeClick('15')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+
+           </div>
+          </div>
+        <br><br><br>
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar3" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar3')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p12.jpg" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht3" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('ht3')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="16" style="color:#000; font-size: 30px; " onclick="likeClick('16')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="17" style="color:#000; font-size: 30px; " onclick="likeClick('17')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="18" style="color:#000; font-size: 30px; " onclick="likeClick('18')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="19" style="color:#000; font-size: 30px; " onclick="likeClick('19')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="20" style="color:#000; font-size: 30px; " onclick="likeClick('20')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+        
+       
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar4" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar4')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p9new.png" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht9new" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('ht9new')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="21" style="color:#000; font-size: 30px; " onclick="likeClick('21')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="22" style="color:#000; font-size: 30px; " onclick="likeClick('22')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="23" style="color:#000; font-size: 30px; " onclick="likeClick('23')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="24" style="color:#000; font-size: 30px; " onclick="likeClick('24')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="25" style="color:#000; font-size: 30px; " onclick="likeClick('25')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+       
+       
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar5" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar5')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p2.png" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht4" style=" font-size: 30px; margin-left: 2%;" onclick="likeClick('ht4')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="26" style="color:#000; font-size: 30px; " onclick="likeClick('26')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="27" style="color:#000; font-size: 30px; " onclick="likeClick('27')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="28" style="color:#000; font-size: 30px; " onclick="likeClick('28')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="29" style="color:#000; font-size: 30px; " onclick="likeClick('29')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="30" style="color:#000; font-size: 30px; " onclick="likeClick('30')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+      
+       
+        
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar6" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar6')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p20.jpg" style="width:100%">
+         <i class="fa-regular fa-heart" id="ht5" style=" font-size: 30px; margin-left: 2%;" onclick="likeClick('ht5')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="31" style="color:#000; font-size: 30px; " onclick="likeClick('31')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="32" style="color:#000; font-size: 30px; " onclick="likeClick('32')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="33" style="color:#000; font-size: 30px; " onclick="likeClick('33')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="34" style="color:#000; font-size: 30px; " onclick="likeClick('34')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="35" style="color:#000; font-size: 30px; " onclick="likeClick('35')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+        
+       
+        
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar7" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar7')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p4.png" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht6" style=" font-size: 30px; margin-left: 2%;" onclick="likeClick('ht6')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="36" style="color:#000; font-size: 30px; " onclick="likeClick('36')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="37" style="color:#000; font-size: 30px; " onclick="likeClick('37')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="38" style="color:#000; font-size: 30px; " onclick="likeClick('38')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="39" style="color:#000; font-size: 30px; " onclick="likeClick('39')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="40" style="color:#000; font-size: 30px; " onclick="likeClick('40')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+        
+        
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar8" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar8')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p18.jpeg" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht7" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('ht7')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="41" style="color:#000; font-size: 30px; " onclick="likeClick('41')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="42" style="color:#000; font-size: 30px; " onclick="likeClick('42')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="43" style="color:#000; font-size: 30px; " onclick="likeClick('43')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="44" style="color:#000; font-size: 30px; " onclick="likeClick('44')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="45" style="color:#000; font-size: 30px; " onclick="likeClick('45')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+       
+        
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar9" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar9')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p15.jpeg" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht8" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('ht8')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="46" style="color:#000; font-size: 30px; " onclick="likeClick('46')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="47" style="color:#000; font-size: 30px; " onclick="likeClick('47')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="48" style="color:#000; font-size: 30px; " onclick="likeClick('48')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="49" style="color:#000; font-size: 30px; " onclick="likeClick('49')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="50" style="color:#000; font-size: 30px; " onclick="likeClick('50')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+        
+        
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar10" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar10')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p15new.jpg" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht9" style=" font-size: 30px; margin-left: 2%;" onclick="likeClick('ht9')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="51" style="color:#000; font-size: 30px; " onclick="likeClick('51')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="52" style="color:#000; font-size: 30px; " onclick="likeClick('52')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="53" style="color:#000; font-size: 30px; " onclick="likeClick('53')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="54" style="color:#000; font-size: 30px; " onclick="likeClick('54')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="55" style="color:#000; font-size: 30px; " onclick="likeClick('55')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+                
+
+        <div class="column">
+          <div class="content">
+          <img src="./image/p14.jpg"style="margin-left:2%; height: 41x; width: 41px; border-radius: 41px;">
+           <div style=" margin-left: 60px; margin-top: -50px;"> 
+            <i class="flex-center icon-3d" style="text-shadow: #818181 2px 2px;">
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-p"></i>
+              <i style="font-size: 150%;color:#000;"class="fa-solid fa-g"></i>
+            </i>
+          </div> 
+          <div class="dropdown" style="size: 2px; text-align: right; margin-top: -35px; margin-right: 5px; text-align: left; margin-left: 86%;"> 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white; margin-top: -1.3%;">
+              <i style="font-size: 185%;color:#000;" class="fa-solid fa-ellipsis-vertical"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+              <p style="color: #000; text-align:left; width: 100%; font-size: 19px; text-shadow: #000 1px 1px;">Add to favorite
+                <i class="fa-regular fa-star" id="htstar11" style="color:black; font-size: 30px; margin-left: 4%;" onclick="likeClick('htstar11')"></i>             
+              </p>           
+          </span>
+          </div>
+          <br>
+          <img src="./image/p16new.png" style="width:100%">
+          <i class="fa-regular fa-heart" id="ht10" style="font-size: 30px; margin-left: 2%;" onclick="likeClick('ht10')"></i>
+          <span class="dropdown" > 
+            <button class="dropbtn" style="width: 0px;height: 0; background-color: white;">
+              <i class="fa-regular fa-comment" style="font-size: 30px; margin-left: 3%; color: #000;"></i> 
+            </button>
+          <span class="dropdown-content">
+            <br>
+            <p style="color: #000; text-align:left; width: 55%; font-size: 20px; text-shadow: #000 1px 1px;">
+              <i class="fa-regular fa-face-kiss-wink-heart" id="56" style="color:#000; font-size: 30px; " onclick="likeClick('56')"></i> &nbsp;
+              <i class="fa-regular fa-face-kiss-beam" id="57" style="color:#000; font-size: 30px; " onclick="likeClick('57')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-tears" id="58" style="color:#000; font-size: 30px; " onclick="likeClick('58')"></i> &nbsp;
+              <i class="fa-regular fa-face-grin-stars" id="59" style="color:#000; font-size: 30px; " onclick="likeClick('59')"></i> &nbsp;            
+              <i class="fa-regular fa-face-surprise" id="60" style="color:#000; font-size: 30px; " onclick="likeClick('60')"></i> &nbsp;     
+            </p>           
+          </span>
+        </span>
+           </div>
+          </div>
+        <br><br><br>
+        
+        <img src="./image/p10new.jpg" style="width:100%">
+
+      </div>
+    <!-- End photo grid -->
+    </div>
+            <!-- Automatic Slideshow Images -->
+         <!--<div class="mySlides">
+          <img src="./image/p10new.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+          <img src="./image/pnew2 (3).png" style="width:100%">
+         </div>
+
+         <div class="mySlides">
+          <img src="./image/pnew2.png" style="width:100%">
+         </div>-->
+
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 style="border-radius: 5px; height:35px; font-size: 28px; width: 99%;"> 
+      <i class="fa-solid fa-id-card-clip" style="margin-left: 10px;"></i> Contact Me</h2>
+    <!--<hr style="width:100%" class="opacity">--> 
+  <br>
+
+    <div style="text-align: center;">
+      <p style="color: whitesmoke; font-size: 25px;"><i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra, India</p>   
+      
+      <p style="color: whitesmoke; font-size: 25px; text-align: center;">
+        <i class="fa-solid fa-phone"></i> Phone : <pre><a href="tel:+91 9373689502" style="color:#fff;" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"><p class="call-button">+91 9373689502</p></a></pre> </p>
+      
+      <p style="color: whitesmoke; font-size: 25px;">💬<i style="color: #fff;" class="fa-solid fa-comment-lines"></i> Email   : <a href="mailto:prafulgajbhiy01@gmail.com" style="color: whitesmoke;">prafulgajbhiy01@mail.com</a> </p>
+    </div><br><br>
+    
+  <p style="width: 99%; text-align: center; border-radius: 4px; color:#000; font-size: 20px; height: 25px; background-color: #818181; margin-top: 10px;">Let's get in touch !</p><br>
+
+   <!-- End Contact Section -->
+  </div>
+  
+<div style="text-align: center; height: 70px;">
+  <span>
+  <button onclick="document
+  .getElementById('id01')
+  
+  .style.display='block'"
+  style="width:auto; background-color:#818181; color: #000; font-size: 22px; margin-top: 35px; border:solid; box-sizing: border-box; box-shadow:dimgrey 3px 3px;  ">Send me a message
+  </button>
+  </span>
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate"
+     action="action_page.php">
+   <div class="imgcontainer">
+     <span onclick="document
+     .getElementById('id01')
+  
+     .style.display='none'"
+      class="close" title="Close">
+      &times;</span>
+  
+     <img src="C:/Users/ASUS/Desktop/Portfolio website/image/Profile-icon.png"
+     alt="Avatar"
+     class="avatar">
+  </div>
+  
+  <div class="container" style="text-align: left;">
+    <label><b>Name</b></label>
+    <input type="text" placeholder=
+    "Enter name"
+    name="uname" required>
+  
+    <label><b>Email</b></label>
+    <input type="password" placeholder=
+    "Enter email" name="psw" required>
+   
+    <label><b>Message</b></label>
+    <input type="text" placeholder=
+    "Enter a message" name="name" required>
+  <a href="wa.me/+919373689502">
+    <button type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+  </a>
+   <!--<input type="checkbox"
+   checked="checked">
+   Remember me -->
+  </div>
+  
+  
+  <div class="container"
+   style="background-color:#f1f1f1; text-align: left;">
+   <button type="button"
+   onclick="document.getElementById
+   ('id01').style.
+  
+   display='none'" class="cancelbtn">
+   Cancel</button>
+   
+   <!--<span class="psw">Forgot
+   <a href="#">password?
+   </a></span> -->
+   <span class="flex-center" style="font-size: 50px; margin-left: 85%; margin-top: -20%; ">
+    <a href="wa.me/+919373689502">
+      <i style="color: green;" class="fa-brands fa-whatsapp-square"></i>
+    </a>
+   </span>
+  </div>
+  
+</div>&nbsp;
+
+ 
+<div class="flex-center" style="text-align: center; font-size: 10px; margin-top: -110px; margin-bottom:-195px; text-shadow: #818181 1px 2px;">
+<a href="https://twitter.com/PrafulG98214964?t=lC6W2KHgsugTUzeXkFqkSg&s=08">
+  <i class="fa-brands fa-twitter fa-4x icon-3d" style="color: #fff; padding: 5px;"></i> 
+</a>
+<a href="https://www.facebook.com/praful.gajbhiye.3194">
+  <i class="fa-brands fa-facebook-f fa-4x icon-3d" style="color: #fff; padding: 5px;"></i>
+</a>
+<a href="https://www.instagram.com/mr.praful_g_g/">
+  <i class="fa-brands fa-instagram fa-4x icon-3d" style="color: #fff; padding: 5px;"></i>
+</a>
+<a href="https://www.snapchat.com/add/praful_gajb2020?share_id=u90g0v45n44&locale=en-GB">
+  <i class="fa-brands fa-snapchat fa-4x icon-3d" style="color: #fff; padding: 5px;"></i>
+</a>
+<a href="https://youtube.com/channel/UCzjh-Wz-xJusoLoTfIK9MuQ">
+  <i class="fa-brands fa-youtube fa-4x icon-3d" style="color: #fff; padding: 5px;"></i>
+</a>
+<a href="https://www.linkedin.com/in/praful-gajbhiye-623176212">
+  <i class="fa-brands fa-linkedin-in fa-4x icon-3d" style="color: #fff; padding: 5px;"></i>
+</a>
+  <!--<i class="fa fa-whatsapp fa-4x icon-3d"></i> -->
+
+</div>
+<br>
+<br>
+
+  <footer style="color: whitesmoke; text-align: center; margin-top: auto; margin-bottom: 20px;"><br>
+    The information in this website is only for instagram creator,influensers,models which are intrested in photoshoot and the client  
+    <br><br><br> <p style="font-size: small;"> Copyright &copy; 2022 praful_gajbhiye✨,All rights reserved.</p>
+  </footer>
+<!-- END PAGE CONTENT -->
+
+
+<script> 
+//nav
+  function openNav(){
+    document.getElementById("myNav")
+    .style.height="100%";
+  }
+  function closeNav(){
+    document.getElementById("myNav")
+    .style.height="0%";
+  }
+
+  //image like
+  /*document.ready(function(){  
+    document.getElementById("heart").click(function(){    
+      if(document.getElementById("heart").classList.contains("liked")){      
+        document.getElementById("heart").innerHTML = '<i class="fa-regular fa-heart"></i>';      
+        document.getElementById("heart").classList.remove("liked");    
+        }else{      
+          document.getElementById("heart").innerHTML = '<i class="fa-solid fa-heart"></i>';      
+          document.getElementById("heart").classList.add("liked");    
+        }  
+     });
+  });*/
+  // Automatic Slideshow - change image every 4 seconds
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+ //Form script
+ // Get the modal 
+ var modal = document.getElementById
+ ('id01');
+
+ // When the user clicks anywhere
+ outside-of-the-modal, close-it 
+
+ window.onclick = function(event) {
+    if (event.target == modal) {
+     modal.style.display = "none";
+    }
+ }
+
+//heart button click 
+ function likeClick(id){
+      document.getElementById(id).classList.toggle('active-heart');
+      document.getElementById(id).classList.toggle('fa-regular');
+      document.getElementById(id).classList.toggle('fa-solid');
+       }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
