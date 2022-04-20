@@ -380,59 +380,7 @@ span.dropdown {
     width: 100%;
   }
 }
-/*
-.center{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
 
-        .p{
-            width: 90%;
-            font-size: 30px;
-            display: block;
-          
-        }
-
-        .char{
-            font-size: 25px;
-            height: 30px;
-            animation: an 1s ease-out 1 both;
-            display: inline-block;
-        }
-
-        @keyframes an{
-            from{
-                opacity: 0;
-                transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-            }
-            to{
-                opacity: 1;
-                transform: perspective(500px) translate3d(0, 0, 0);
-            }
-        }
-.mylink{
-  position: absolute;
-  z-index: 150;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: right;
-  padding: .6rem;
-}
-
-.mylink a{
-  font-family: Calibri;
-  color: #fff;
-  border-bottom: 1px solid #fff;
-  opacity: .5;
-  transition: opacity .3s;
-  text-decoration: none
-}
-.mylink a:hover{
-  opacity: 1
-}*/
 </style>
 
 <div class="sticky">
@@ -463,7 +411,7 @@ span.dropdown {
     <a href="#about" class="w3-bar-item w3-button" style="font-size: 30px; width:25% !important"><span><i class="fa-solid fa-address-card">&nbsp;&nbsp;&nbsp;&nbsp;ABOUT</i></span></a>
     <a href="#photos" class="w3-bar-item w3-button" style="font-size: 30px; width:25% !important"><span><i class="fa-solid fa-camera">&nbsp;&nbsp;&nbsp;PHOTOS</i></span></a>
     <a href="#contact" class="w3-bar-item w3-button" style="font-size: 30px; width:25% !important"><span><i class="fa-solid fa-address-book">&nbsp;&nbsp;CONTACT</i></span></a><br>
-    <a href="term.html" class="w3-bar-item w3-button" style="margin-top: 50%; height: 35px; text-align: left; font-size: 108%; width:100% !important"><span><i class="fa-brands fa-teamspeak">&nbsp; PRIVACY POLICY | TERMS AND CONDITION</i></span></a>
+    <a href="term.html" class="w3-bar-item w3-button" style="margin-top: 50%; text-align: left; font-size: 100%; width:100% !important"><span><i class="fa-brands fa-teamspeak">&nbsp;PRIVACY POLICY | TERMS AND CONDITION</i></span></a>
     </div>
    </div>
  </div>
@@ -1153,20 +1101,6 @@ span.dropdown {
       </div>
     <!-- End photo grid -->
     </div>
-            <!-- Automatic Slideshow Images -->
-         <!--<div class="mySlides">
-          <img src="./image/p10new.jpg" style="width:100%">
-         </div>
-
-         <div class="mySlides">
-          <img src="./image/pnew2 (3).png" style="width:100%">
-         </div>
-
-         <div class="mySlides">
-          <img src="./image/pnew2.png" style="width:100%">
-         </div>-->
-
-  <!-- End Portfolio Section -->
   </div>
 
   <!-- Contact Section -->
@@ -1287,33 +1221,17 @@ span.dropdown {
   <footer style="color: whitesmoke; text-align: center; margin-top: auto; margin-bottom: 20px;"><br>
     The information in this website is only for instagram creator,influensers,models which are intrested in photoshoot and the client  
     <br><br>
-     <a href="term.html" style="color: white; font-size: 99%; text-align: center;"> PRIVACY POLICY | <br> TERMS AND CONDITIONS </a>
-    
-    <br><br><br> <p style="font-size: small;"> Copyright &copy; 2022 praful_gajbhiye✨,All rights reserved.</p>
+     <div style="text-align: left;width: 50%; height: 40px; margin-left: 10%;">
+     <a href="term.html" style="color: white; font-size: 99%;">| PRIVACY POLICY</a><br>
+     <a href="term.html" style="color: white; font-size: 99%;">| TERMS AND CONDITIONS </a>
+     </div>
+     <br><br><p style="font-size: small;"> Copyright &copy; 2022 praful_gajbhiye✨,All rights reserved.</p>
     <br>
   </footer>
 <!-- END PAGE CONTENT -->
 
 
 <script> 
-    /*  var text = document.getElementById('text');
-        var newDom = '';
-        var animationDelay = 13;
-
-        for(let i = 0; i < text.innerText.length; i++)
-        {
-            newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-        }
-
-        text.innerHTML = newDom;
-        var length = text.children.length;
-
-        for(let i = 0; i < length; i++)
-        {
-            text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-        }
-*/
-
 //nav
   function openNav(){
     document.getElementById("myNav")
@@ -1323,7 +1241,6 @@ span.dropdown {
     document.getElementById("myNav")
     .style.height="0%";
   }
-
   // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
@@ -1359,11 +1276,8 @@ function carousel() {
       document.getElementById(id).classList.toggle('active-heart');
       document.getElementById(id).classList.toggle('fa-regular');
       document.getElementById(id).classList.toggle('fa-solid');
-       }
-
-      
+       }   
 </script>
-
 </body>
 </html>
 
