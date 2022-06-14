@@ -7,7 +7,8 @@
 
 <style>
     body{
-        background-color: aliceblue;
+        background-color:#000;
+        color: aliceblue;
     }
 strong{
     font-size: large;
@@ -15,14 +16,20 @@ strong{
 h1{
     font-size: 30px;
     background-color:darkturquoise;
+    color: #000;
+     border-radius: 3px;
 }
 h2{
     font-size: 25px;
     background-color:aquamarine;
+    color: #000;
+    border-radius: 3px;
 }
 h3{
     font-size: 20px;
     background-color: bisque;
+    color: #000;
+    border-radius: 3px;
 }
 
 div.sticky{
@@ -163,18 +170,18 @@ nav{
 }
 </style>
 <body>
-  <div class="sticky">
-    <header class="head" style=" background-color: #000; color: white; margin-top: -1.5px; display: block;">
-      <span style="margin-top: 10px; margin-left: 5px; font-size: 32px; margin-bottom: 10px; cursor:pointer"onclick="openNav()">☰</span>&nbsp;&nbsp;
-      <div  style=" text-align: right;height:35px ; margin-top: -34px; font-size:22px;color: white;">TERMS AND CONDITIONS
+  <div class="sticky"><b>
+    <header class="head" style=" background-color:#222; color:white; margin-top: -1.5px; display: block;border-radius: 5px;">
+      <span style="margin-top: 10px; margin-left: 5px; font-size: 32px; margin-bottom: 10px; cursor:pointer"onclick="openNav()">☰</span></b>&nbsp;&nbsp;
+      <div  style=" text-align: right;height:35px ; margin-top: -34px; font-size:24px;color:white; text-shadow: #818181 1px 1px ;"><b>TERMS AND CONDITIONS</b>
     <!-- <p style="text-align: right; margin-top: -3px; font-size:22px;color: white;"></p>-->
     </div>
      </header>
     </div>
     <body class="w3-black">
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-align: right;">×</a>
+    <div id="myNav" class="overlay"><b>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-align: right;">×</a></b>
      <div class="overlay-content">
        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div style="margin-left: auto;">
@@ -281,8 +288,8 @@ nav{
 <br><br>
 <!-- https://www.termsfeed.com/live/37ce6d26-6c53-4461-a1d3-8c7e5b76b0a9 -->
     
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top <i class="fa-solid fa-arrow-up"></i></button>
-   
+<button style="color:#000;" onclick="topFunction()" id="myBtn" title="Go to top"><b>Top <i class="fa-solid fa-arrow-up"></i></b></button>
+  
 
 <script>
     var text = document.getElementById('text');
